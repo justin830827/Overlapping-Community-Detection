@@ -10,6 +10,8 @@ Yang-Kai Chou (ychou3)
 import networkx as nx
 import numpy as np
 import sys
+from LA import *
+from IS2 import *
 
 def main():
     # Read the data from file 
@@ -20,7 +22,12 @@ def main():
         for line in f:
             line = line.split()
             g.add_edge(int(line[0]),int(line[1]))
-    print ("number of nodes",len(g))
+    # print ("number of nodes",len(g))
+
+    clusters = LA(g)
+    communties = IS2(clusters, g)
+    print (communties)
+
     
 
 if __name__ == "__main__":
