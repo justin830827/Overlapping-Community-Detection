@@ -29,4 +29,4 @@ def IS2(cluster,G):
 			increase = False
 		else:
 			W = new_W
-	return cluster
+	return list(cur.nodes)
