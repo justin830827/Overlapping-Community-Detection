@@ -1,8 +1,9 @@
 import networkx as nx
+from weight import * 
 
 def LA(G):
-	vertex = nx.nodes(G)
 	clusters = []
+	vertex = orderVertex(G)
 
 	for v in vertex:
 		add = False
