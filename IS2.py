@@ -15,8 +15,11 @@ def IS2(cluster,G):
 				original_vertex.remove(vertex)
 			else:
 				original_vertex.append(vertex)
-			new_cur = G.subgraph(original_vertex)
-			new_cur_w = float(2 * nx.number_of_edges(new_cur) / nx.number_of_nodes(new_cur))
+			if not original_vertex:
+				new_cur_w=0
+			else:
+				new_cur = G.subgraph(original_vertex)
+				new_cur_w = float(2 * nx.number_of_edges(new_cur) / nx.number_of_nodes(new_cur))
 			cur_w = float(2 * nx.number_of_edges(cur) / nx.number_of_nodes(cur))
 			if new_cur_w > cur_w:
 				cur = new_cur.copy()
