@@ -25,10 +25,11 @@ def main():
     # print ("number of nodes",len(g))
 
     clusters = LA(g)
-    communties = IS2(clusters, g)
-    print (communties)
-
-    
+    final_clusters = []
+    for cluster in clusters:
+        final_clusters.append(IS2(cluster, g))
+    print (final_clusters)
+    print (len(final_clusters))
 
 if __name__ == "__main__":
     main()

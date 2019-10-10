@@ -6,6 +6,7 @@ def weight(c):
 
 def orderVertex(g):
     d = nx.pagerank(g)
-    sorted_v = list(map(lambda x: x[0],sorted(d.items(), key=operator.itemgetter(1))))
+    sorted_v = list(map(lambda x: x[0],sorted(d.items(), key = operator.itemgetter(1), reverse=False)))
+    print (sorted_v)
     return sorted_v
 
