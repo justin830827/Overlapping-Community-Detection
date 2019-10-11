@@ -34,7 +34,7 @@ def main():
         if fc not in final_without_duplicates:
             final_without_duplicates.append(fc)
     # Write to file
-    with open("output.txt", 'w') as f:
+    with open("./Result/output.txt", 'w') as f:
         for fwd in final_without_duplicates:
             line = " ".join(map(str, fwd))
             f.write(line + '\n')
