@@ -8,7 +8,6 @@ Yang-Kai Chou (ychou3)
 '''
 
 import networkx as nx
-import numpy as np
 import sys
 from LA import *
 from IS2 import *
@@ -22,10 +21,10 @@ def main():
         for line in f:
             line = line.split()
             g.add_edge(int(line[0]),int(line[1]))
-    # print ("number of nodes",len(g))
-
+    # Run the first part of algorithm
     clusters = LA(g)
     final_clusters = []
+    # Run the second part of algorithm
     for cluster in clusters:
         final_clusters.append(IS2(cluster, g))
 
