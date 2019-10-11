@@ -28,8 +28,18 @@ def main():
     final_clusters = []
     for cluster in clusters:
         final_clusters.append(IS2(cluster, g))
-    print (final_clusters)
-    print (len(final_clusters))
+
+    final_without_duplicates = []
+    for fc in final_clusters:
+        fc = sorted (fc)
+        if fc not in final_without_duplicates:
+            final_without_duplicates.append(fc)
+
+    with open("output.txt", 'w') as f:
+        for fwd in final_without_duplicates:
+            line = " ".join(map(str, fwd))
+            f.write(line + '\n')
+
 
 if __name__ == "__main__":
     main()
