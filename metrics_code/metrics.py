@@ -285,10 +285,10 @@ for i in range(len(foundClusters)):
     """ Density """
     if vCount>1:
         singleDensity = nx.density(commSubgraph)
-    	allDensity += singleDensity
+        allDensity += singleDensity
     else:
         singleDensity = 1
-    	allDensity = allDensity+1
+        allDensity = allDensity+1
 
 
     """ Clustering Coefficient """
