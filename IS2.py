@@ -5,7 +5,6 @@ def IS2(cluster,G):
 	W = float(2*nx.number_of_edges(cur)/nx.number_of_nodes(cur))
 	increase = True
 	while increase:
-		print ("-----------------------------------------")
 		N = cluster
 		for vertex in cur.nodes:
 			adj = G.neighbors(vertex)

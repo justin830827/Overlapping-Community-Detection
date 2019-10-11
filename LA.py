@@ -3,8 +3,8 @@ from weight import *
 
 def LA(G):
 	clusters = []
-	# vertex = orderVertex(G)
-	vertex = G.nodes
+	vertex = orderVertex(G)
+	# vertex = G.nodes
 	for v in vertex:
 		add = False
 		#current=G.subgraph(v)
