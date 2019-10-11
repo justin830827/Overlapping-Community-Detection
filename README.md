@@ -41,5 +41,5 @@ Each line present the nodes with same community and, for example, the second com
 ## Project Member:
 1. Wen-Han Hu (whu24)
 2. Yang-Kai Chou (ychou3)
-3. Yuan Xu
+3. Yuan Xu (yxu48)
 
