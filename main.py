@@ -27,13 +27,13 @@ def main():
     # Run the second part of algorithm
     for cluster in clusters:
         final_clusters.append(IS2(cluster, g))
-
+    # Remove duplicate cluster
     final_without_duplicates = []
     for fc in final_clusters:
         fc = sorted (fc)
         if fc not in final_without_duplicates:
             final_without_duplicates.append(fc)
-
+    # Write to file
     with open("output.txt", 'w') as f:
         for fwd in final_without_duplicates:
             line = " ".join(map(str, fwd))
