@@ -2,6 +2,9 @@
 
 This project 2 is to implement the alogrithm discussed in Paper 1, Efficient Identification of Overlapping Communities.
 
+## Environment to test the script
+This project has been tested on `CSC591_ADBI_v3` VCL environment.
+
 ## Packages requirment
 Please ensure the `networkx` to be installed beforehand, or run the following command to install:
 ```
