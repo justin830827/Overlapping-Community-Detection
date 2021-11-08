@@ -19,7 +19,7 @@ After download the zip, first unzip the zip file and get into the folder.
 unzip GDM_Project2.zip
 cd GDM_Project2
 ```
-Once the path is under `GDM_Project2`, please run the command in following format. 
+Once the path is under `GDM_Project2`, please run the command as follows. 
 ```
 python3 main.py <path/to/file/file>
 ```
@@ -27,9 +27,9 @@ For example, if we would like to run the `amazon.graph.small`, please run the co
 ```
 python3 main.py ./datasets/amazon/amazon.graph.small 
 ```
-After the program complete, the final communiites will be store in `result/output.txt`, the program should run 3 mins to 10 mins depends on the graph size.
+After the program complete, the final communiites will be store in `result/output.txt`, the program should run 3 mins to 10 mins depending on the graph size.
 
-Note that if `output.txt` will be overwrited if re-run the prorgam.
+Note that `output.txt` will be overwrited if re-run the prorgam.
 The output file will be in the format as below:
 ```
 0 1
